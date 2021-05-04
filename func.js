@@ -64,7 +64,7 @@ const name =
 const searchName = (nama, limit, callback) => {
   const searchResult = []
   name.filter((data) => {
-    if (data.match(nama)) {
+    if (data.toLowerCase().match(nama.toLowerCase())) {
       searchResult.push(data)
     }
   })
